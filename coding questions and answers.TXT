@@ -60,3 +60,30 @@ A. public static void main(String[] args)
 		int n= sc.nextInt();
 		System.out.println("entered number is "+n);
 	}
+3. Ask user to enter the starting and ending number and print all the prime numbers between starting and ending number.
+A. public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter starting number : ");
+		int startnum= sc.nextInt();
+		System.out.print("Enter ending number : ");
+		int endnum= sc.nextInt();
+		System.out.println("Prime numbers between "+startnum+" and "+endnum+" are ");
+		for(int i=startnum;i<endnum;i++)
+		{
+			primeCal(i);
+		}
+	}
+	   static void primeCal(int num)
+	   {
+		int count=0;
+		for(int i=1;i<=num;i++)
+		{
+		   if(num%i==0)
+		   {
+		        count++;	        
+		   }
+		}
+		if(count==2)
+		       System.out.print(num+",");  
+	   } 
