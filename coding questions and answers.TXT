@@ -52,3 +52,11 @@ A. public static void main(String[] args)
 		System.out.println("I don't like you");
 		System.out.println("But I have to \"LEARN\",I am ready");
 	}
+2. Ask user to input a number and then print the number.
+A. public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number : ");
+		int n= sc.nextInt();
+		System.out.println("entered number is "+n);
+	}
