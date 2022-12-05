@@ -155,4 +155,59 @@ A)public static void main(String[] args)
 		else if(Character.isDigit(ch.charAt(0)))
 			System.out.println("A Number! I can read your mind");
 	}
+Coding Exercise-07:
+Ask user to input starting day and the number of days in a month. Find the number of times everyday occurs in thar month.
+EX:Input: Number of days in month = 30,First day = Tuesday
+A)
+import java.io.Console;
+import java.util.Scanner;
 
+public class PracticeAssignment {
+
+	public static void main(String[] args)
+	{
+		//Ask user to input starting day and the number of days in a month. Find the number of times everyday occurs in that month.
+		//EX:Input: Number of days in month = 30,First day = Tuesday
+		Scanner sc = new Scanner(System.in);
+	   	System.out.print("Enter Starting day:");
+		String startday = sc.next();
+		System.out.print("Enter number of days in a month");
+		int nod = sc.nextInt();
+		String[] days = new String[]{ "Monday","Tuesday", "Wednesday","Thursday", "Friday","Saturday", "Sunday" };
+                int[] count = new int[7];
+        	for (int i = 0; i < 7; i++)
+	            count[i] = 4;
+         
+        	int pos = 0;
+	        for (int i = 0; i < 7; i++)
+        	{
+	            if (startday == days[i])
+	            {
+	                pos = i;
+        	        break;
+	            }
+        	}
+         
+	        int inc = nod - 28;
+        	for (int i = pos; i < pos + inc; i++)
+	        {
+        	    if (i > 6)
+                	count[i % 7] = 5;
+	            else
+        	        count[i] = 5;
+	        }
+         
+        	for (int i = 0; i < 7; i++)
+	        {	
+        		if(days[i].contains(startday))
+	        	{
+        			System.out.println(days[i] + " " + count[i]);
+        		}
+	        }
+    }
+     
+}
+
+
+  
+ 
