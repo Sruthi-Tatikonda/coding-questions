@@ -89,7 +89,7 @@ A. public static void main(String[] args)
 	   } 
 Coding Exercise-04 write the output for the following code :
 1A) var i = 1;
-while (i < 10) {
+while (i <= 10) {
     console.log(i);
     i +=2;
 }
@@ -99,3 +99,34 @@ o/p:
 5
 7
 9
+1B) var i = 100;
+while (i < 150) {
+    console.log(i+1);
+    i--;
+}
+o/p:
+infinite loop
+2A)
+public static void main(String[] args)
+	{
+		String s = "A\";\";B\";\"C\";\"D\";\"E\";\"F\";\"G";
+		String s1 = "Now I know my ABCs";
+		System.out.println("\""+s+"\";\""+s1+"\"");
+	}
+o/p:
+"A";";B";"C";"D";"E";"F";"G";"Now I know my ABCs"
+2B)
+o/p:
+	public static void main(String[] args)
+	{
+		String s = "A\";\";B\";\"C\";\"D\";\"E\";\"F\";\"G";
+		String s1 = "Now I know my ABCs";
+		String s2 = "123456";
+		System.out.println("\""+s2+"\";\""+s+"\";\""+s1+"\"");
+	}
+o/p:
+"123456";"A";";B";"C";"D";"E";"F";"G";"Now I know my ABCs"
+
+Coding Exercise-05:
+1)
+A) SELECT numbers FROM num where numbers > = All(Select numbers from num);
