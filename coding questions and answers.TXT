@@ -87,3 +87,15 @@ A. public static void main(String[] args)
 		if(count==2)
 		       System.out.print(num+",");  
 	   } 
+Coding Exercise-04 write the output for the following code :
+1A) var i = 1;
+while (i < 10) {
+    console.log(i);
+    i +=2;
+}
+o/p:
+1
+3
+5
+7
+9
