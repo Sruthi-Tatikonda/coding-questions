@@ -128,5 +128,19 @@ o/p:
 "123456";"A";";B";"C";"D";"E";"F";"G";"Now I know my ABCs"
 
 Coding Exercise-05:
-1)
-A) SELECT numbers FROM num where numbers > = All(Select numbers from num);
+1A) SELECT numbers FROM num where numbers > = All(Select numbers from num);
+2A)  public static void main(String[] args)
+	{
+		int random,guess = 6;
+		Scanner sc = new Scanner(System.in);
+	   	System.out.print("Enter number between 1 and 9:");
+		random = sc.nextInt();
+		if(random == guess)
+			System.out.println("Right Guess");
+		else if(random>=5)
+			System.out.println("High");
+		else if(random<5)
+			System.out.println("Low");
+	}
+Coding Exercise-06:
+1A)
